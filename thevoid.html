@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+
+<body id="body1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="font-size: 16px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" >
+                    <a class="nav-link" id="l1" style="color: white; margin-right: 40px; margin-left:320px; margin-top: -4px"  href="index.html">Home</a>
+                </li>
+               
+                <li class="nav-item"  >
+                    <a class="nav-link" id="l2" style="color: white; margin-right: 40px; margin-left: 139px; margin-top: -4px" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item"  >
+                    <a class="nav-link" id="l3" style="color: white; margin-right: 40px; margin-left: 129px; margin-top: -4px" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item"  >
+                    <a class="nav-link" id="l4" style="color: white; margin-right: 40px; margin-left: 87px;" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" id="darkmodebutton"  style="margin-right: 40px; margin-left: 58px; margin-top: -10.2px" href="#"><img src="b4.png" alt="button"> </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="margin-top: 50px; margin-left: 400px; margin-right:400px" >
+        <h1><mark style = "background-color: grey; color: white; font-style: italic ;">The Void</mark></h1> <br>
+        <div>I feel lost. </div><br>
+        <div>Lost in the labyrinth of figuring out if I’ll ever be good enough. Some paths of this arcane maze force me to feel the gruesome uncomfort of unravelling past memories. The others make me question the very foundations of this difficult, hard-to-figure-out, life. I am an adult. I should, perhaps, act like one. I should take it little by little and, maybe one day I really will be ok. That’s what they say. That it’ll be ok. Will it ever be okay? I really wonder.</div>
+
+        <br>
+
+        <div>Wonder maybe if I had tried a little more, had I been a little more systematic, would I still be feeling this … void that I feel today? The void is very still, it doesn't move or speak at all, it’s almost as if there’s an agreement between me and the void, that we shouldn’t talk, or we both would cease to exist. I don’t want to turn into nothingness, so I oblige, to the haunted void that lives inside of me.</div>
+
+        <br>
+
+        <div>
+            I imagine my void must be shapeless, without any structure or outline, because of the indecisive nature of mine. This void eats me up, like a blackhole, any time I try to go in any proximity to it. Everytime I have tried to talk to the void about my feelings, I am reminded of the tacit agreement, rather unjustly, by the seamless tears of mine.
+        </div>
+
+        <br>
+
+        <div>
+            It never lets me speak. The void never speaks to me either.
+
+        </div>
+
+
+        <br> <br> <br>
+       
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+    <script>
+        var isWhiteMode = false;
+
+        function toggleWhiteMode() {
+            isWhiteMode = !isWhiteMode;
+            // var imageUrl = isDarkMode ? 'white.png' : 'dark.png';
+            document.body.style.backgroundImage = isWhiteMode ? 'url(white.png)' : 'url(bg.png)';
+            document.body.style.color = isWhiteMode ? 'black' : 'white';
+            
+            document.getElementById('l1').style.color = isWhiteMode ? 'black' : 'white';
+            document.getElementById('l2').style.color = isWhiteMode ? 'black' : 'white';
+            document.getElementById('l3').style.color = isWhiteMode ? 'black' : 'white';
+            document.getElementById('l4').style.color = isWhiteMode ? 'black' : 'white';
+
+
+            
+        }
+
+        $(document).ready(function() {
+            $("#darkmodebutton").on("click", toggleWhiteMode);
+        });
+    </script>
+</body>
+</html>
